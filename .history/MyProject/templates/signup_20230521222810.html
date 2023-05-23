@@ -2,17 +2,10 @@
 {% extends 'flatpages/default.html' %}
 
 {% block content %}
-<br>
-<br>
 <h2>Регистрация нового пользователя</h2>
-<br>
-<br>
-
 <form method="post">
-   {% csrf_token %}
-   {{ form.as_p }}
-
-<br>
+  {% csrf_token %}
+  {{ form.as_p }}
   <button type="submit">Зарегистрироваться</button>
 </form>
 {% endblock content %}

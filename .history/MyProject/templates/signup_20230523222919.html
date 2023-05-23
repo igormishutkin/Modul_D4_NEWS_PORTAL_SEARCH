@@ -9,10 +9,8 @@
 <br>
 
 <form method="post">
-   {% csrf_token %}
-   {{ form.as_p }}
-
-<br>
+  {% csrf_token %}
+  {{ form.as_p }}
   <button type="submit">Зарегистрироваться</button>
 </form>
 {% endblock content %}
